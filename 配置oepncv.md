@@ -1,5 +1,6 @@
-ubuntu18.04的安装与配置，首先下好iso文件，在vmpro中新建一个linux机，在配置时要选择稍后选择光盘，内存建议直接上2g(一开始使用的1g根本不够)。
-配置好后，点击vm虚拟机的安装vmtools，通过tar -xvzf指令解压，解压后进入解压的安装包，./vmware-install.pl执行安装，一路回车或者y,，之后就可以设置全屏或者拖拽文件了。
+<h1>ubuntu18.04的安装与配置<h1>
+<p>首先下好iso文件，在vmpro中新建一个linux机，在配置时要选择稍后选择光盘，内存建议直接上2g(一开始使用的1g根本不够)。
+配置好后，点击vm虚拟机的安装vmtools，通过tar -xvzf指令解压，解压后进入解压的安装包，./vmware-install.pl执行安装，一路回车或者y,，之后就可以设置全屏或者拖拽文件了。</p>
 unbuntu安装配置oepncv3.4.8:首先要配置好cmake的最新版，因为更换了阿里的软件源，因此cmake 可以直接apt-get安装最新版。cmake配置好之后进行opencv的安装。
 opencv下好软件包之后，用unzip解压，解压后cd到opencv.3.4.8，mkdir一个release文件，cd进去，输入编译指令cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 之后，make开始进行编译（内存至少2g才行，不然会发型swap空间不足的情况）。之后，sudo make install完成安装。
